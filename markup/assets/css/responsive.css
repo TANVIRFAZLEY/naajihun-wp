@@ -1,0 +1,244 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) {
+
+    /* Header area start */
+
+
+    .mainmenu li {
+        display: inline-block;
+        margin-left: 25px;
+        position: relative;
+    }
+
+    .mainmenu li a {
+        display: block;
+        padding: 16px 0;
+        font-weight: 700;
+        font-size: 17px;
+        text-transform: uppercase;
+        color: #2E2751;
+        transition: all ease-out .4s;
+    }
+
+
+    /* ===== */
+
+
+    .mainmenu li ul {
+        position: absolute;
+        left: 0;
+        top: 100px;
+        background: #fff;
+        width: 200px;
+        z-index: 5;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+        box-shadow: 0 3px 12px 0 rgba(0, 0, 0, .1);
+    }
+
+    .mainmenu li ul li a {
+        padding: 10px 20px;
+        text-transform: capitalize;
+        transition: .5s;
+        font-weight: 500;
+        color: #2E2751;
+        text-align: left;
+    }
+
+    .mainmenu li ul li {
+        display: block;
+        margin-left: 0;
+    }
+
+    .mainmenu li:hover ul {
+        opacity: 1;
+        visibility: visible;
+        top: 74px;
+    }
+
+    .mainmenu li ul li {
+        border-bottom: 1px solid #e8e8e8;
+    }
+
+    .mainmenu li ul li:last-of-type {
+        border-bottom: 0px solid #e8e8e8;
+    }
+
+    .mainmenu li:hover>a {
+        color: #179E66;
+    }
+
+
+
+    /* second level */
+    .mainmenu li:hover ul ul {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .mainmenu ul li ul {
+        left: 200px;
+    }
+
+    .mainmenu ul li:hover>ul {
+        top: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mainmenu li ul li:hover>a {
+        background: #179E66;
+        color: #fff;
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .testimonial-wrapper {
+        width: 80%;
+    }
+}
+
+/* Tablet Layout: 768px. 991*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .about-img {
+        margin-bottom: 50px;
+    }
+
+    .cta-text {
+        text-align: center;
+    }
+
+    .cta-btn-area {
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .portfolio-single-item {
+        width: 48%;
+        margin-bottom: 30px;
+    }
+
+    .testimonial-wrapper {
+        width: 100%;
+    }
+
+    .single-team {
+        padding: 50px 20px;
+    }
+
+    .team-social-link a {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .single-team h3 {
+        font-size: 18px;
+    }
+
+    .single-blog {
+        margin-bottom: 30px;
+    }
+
+    .single-footer-widget {
+        margin-bottom: 50px;
+    }
+
+
+}
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    .home-single-slider {
+        background: #E6E2E1 !important;
+        height: 450px;
+    }
+
+    .welcome-text {
+        height: 450px;
+    }
+
+    .hero-slider-text h1 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .hero-slider-text {
+        width: 100%;
+    }
+
+    .naajihun-btn {
+        padding: 8px 20px;
+    }
+
+    .section-title p {
+        width: 100%;
+    }
+
+    .single-workproccess-area {
+        margin-bottom: 30px;
+    }
+
+    .about-img {
+        margin-bottom: 50px;
+    }
+
+    .cta-text {
+        text-align: center;
+    }
+
+    .cta-btn-area {
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .portfolio-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-wrapper {
+        margin-right: 0;
+    }
+
+    .portfolio-single-item {
+        width: 100%;
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+
+    .testimonial-wrapper {
+        width: 100%;
+    }
+
+    .single-team {
+        margin-bottom: 30px;
+    }
+
+    .single-blog {
+        margin-bottom: 30px;
+    }
+
+    .single-footer-widget {
+        margin-bottom: 50px;
+    }
+}
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .hero-slider-text h1 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+}
